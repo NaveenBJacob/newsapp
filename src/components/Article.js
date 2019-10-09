@@ -2,7 +2,7 @@ import React from 'react';
 
 import { View, Linking, TouchableNativeFeedback } from 'react-native';
 import { Text, Button, Card, Divider } from 'react-native-elements';
-import moment from 'moment';
+
 
 export default class Article extends React.Component {
   render() {
@@ -15,7 +15,7 @@ export default class Article extends React.Component {
       url
     } = this.props.article;
     const { noteStyle, featuredTitleStyle } = styles;
-    const time = moment(publishedAt || moment.now()).fromNow();
+
     const defaultImg =
       'https://wallpaper.wiki/wp-content/uploads/2017/04/wallpaper.wiki-Images-HD-Diamond-Pattern-PIC-WPB009691.jpg';
 
