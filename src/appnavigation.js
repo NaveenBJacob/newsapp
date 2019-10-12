@@ -1,10 +1,10 @@
 import homeScreen from "./homepage";
-import {createAppContainer} from 'react-navigation'
-import {createStackNavigator} from 'react-navigation-stack'
+import newsdetails from './components/newsdetails';
+import {createStackNavigator} from 'react-navigation-stack';
 
 const Navigator= createStackNavigator({
     Home:{screen:homeScreen},
-    // Details:{screen:NewsDetails}
+    Details:{screen:newsdetails}
   });
+  export default Navigator;
   
-  export default createAppContainer(Navigator);

@@ -9,16 +9,11 @@ export default class Article extends React.Component {
     const {
       title,
       description,
-      publishedAt,
-      source,
-      urlToImage,
       url
     } = this.props.article;
     const { noteStyle, featuredTitleStyle } = styles;
-
-    const defaultImg =
-      'https://wallpaper.wiki/wp-content/uploads/2017/04/wallpaper.wiki-Images-HD-Diamond-Pattern-PIC-WPB009691.jpg';
-
+    const {navigate}=this.props.navigation;
+    
     return (
 
         <Card
@@ -32,7 +27,8 @@ export default class Article extends React.Component {
           <Button 
           title='More'
           style={{color:'red',width:200}} 
-          onPress={()=>{Linking.openURL(url)}}>
+          onPress={()=>{navigate('Details',{news:article});
+            }}>
           </Button>  
           <Divider style={{ backgroundColor: '#dfe6e9' }} />
           <View
