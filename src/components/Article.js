@@ -27,8 +27,7 @@ export default class Article extends React.Component {
           <Button 
           title='More'
           style={{color:'red',width:200}} 
-          onPress={()=>{navigate('Details',{news:article});
-            }}>
+          onPress={()=>{naviagte('Details',{news:article})}}>
           </Button>  
           <Divider style={{ backgroundColor: '#dfe6e9' }} />
           <View
